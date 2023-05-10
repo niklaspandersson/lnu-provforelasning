@@ -1,0 +1,46 @@
+html,
+body {
+  padding: 0;
+  margin: 0;
+  scroll-snap-type: y mandatory;
+  font-family: sans-serif;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+}
+
+section {
+  scroll-snap-align: start;
+  min-height: 100vh;
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  width: 100vw;
+}
+
+#intro {
+  background-image: url("images/construction_bg.jpg");
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.801); 
+  color: #eee;
+  font-size: 2rem;
+  text-align: center;
+  justify-content: stretch;
+}
+
+.container {
+  padding: 1rem;
+  width: 800px;
+}
+
+#intro .container {
+  flex-grow: 1;
+  width: unset;
+  backdrop-filter: brightness(50%);
+}
+
+#intro h1 {
+  font-weight: 600;
+}
