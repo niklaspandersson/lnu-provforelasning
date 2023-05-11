@@ -31,16 +31,38 @@ section {
 }
 
 .container {
-  padding: 1rem;
+  padding: 2rem;
   width: 800px;
 }
 
 #intro .container {
   flex-grow: 1;
   width: unset;
-  backdrop-filter: brightness(50%);
+  backdrop-filter: blur(5px);
 }
 
 #intro h1 {
   font-weight: 600;
+}
+
+#kursen {
+  background-color: #f4f4ec;
+}
+
+.container {
+ transform: translateX(-50px);
+ opacity: 0;
+ transition: none;
+}
+
+section.static .container {
+  transform: none;
+  opacity: initial;
+  transition: none;
+ }
+
+section.visible .container {
+  transform: none;
+  opacity: 1;
+  transition: all .5s ease-out 100ms;
 }
