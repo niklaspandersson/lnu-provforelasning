@@ -25,8 +25,8 @@
 ### HTML + CSS + JS = 🎉
 
 - Beskrivning av de tre teknologierna
-  - HTML - struktur och content
-  - CSS - "Utseende", Färg form och layout
+  - HTML - struktur och innehåll
+  - CSS - "Kosmetik", Färg form, layout
   - JS - reaktivitet, interaktivitet, funktion
 - Exempel
 
