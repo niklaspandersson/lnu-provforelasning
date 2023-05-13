@@ -49,7 +49,7 @@ section {
   background-color: #f4f4ec;
 }
 
-.animate {
+.hidden {
  transform: translateX(-50px);
  opacity: 0;
  transition: none;
