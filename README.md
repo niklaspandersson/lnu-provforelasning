@@ -6,7 +6,7 @@
 
 - Dagens agenda
   - presentation av kursen / kursens innehåll / upplägg
-  - Vad är webbutveckling
+  - Hur fungerar en webbsida
     - HTML + CSS + JS inkl. exempel på varje
   - Nästa gång
 
@@ -16,16 +16,12 @@
 - Kortfattat innehåll
 - Vad kan du när kursen är slut
 
-## Webbutveckling (på klientsidan)
-
-- Motiverande exempel
-
-### Kort skillnaden mellan klientbaseradutveckling och serverbaserad
+## Hur fungerar en webbsida?
 
 ### HTML + CSS + JS = 🎉
 
 - Beskrivning av de tre teknologierna
-  - HTML - struktur och innehåll
+  - HTML - struktur och innehåll.
   - CSS - "Kosmetik", Färg form, layout
   - JS - reaktivitet, interaktivitet, funktion
 - Exempel
