@@ -4,6 +4,9 @@ body {
   margin: 0;
   scroll-snap-type: y mandatory;
   font-family: sans-serif;
+  background: linear-gradient(0deg, #B5FFFC 0%, #FFDEE9 100%);
+  font-size: 38px;
+  color: rgba(43, 54, 48, 0.95);
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -30,61 +33,94 @@ section {
   width: 100vw;
 }
 
-#intro {
-  background-position-y: bottom;
-  background-image: url("images/screentime_bg.jpg");
-  text-shadow: 0 0 6px rgba(0, 0, 0, 0.801); 
-  color: #f4f4ec;
-  font-size: 5rem;
-  text-align: center;
-  justify-content: stretch;
-}
-#intro .container {
-  margin-bottom: 20vh;
-  text-align: right;
-  font-size: 5vw;
-}
-
 .container {
   padding: 2rem;
   max-width: 640px;
 }
 
-#intro .container {
-  flex-grow: 1;
-  max-width: unset;
-  backdrop-filter: blur(5px);
+.splash {
+  background-color: #FFDEE9;
+  background-image: linear-gradient(0deg, #FFDEE9 0%, #B5FFFC 100%);
+  color: #a45403a3;
+  text-align: center;
+  justify-content: stretch;
 }
 
-#intro h1 {
+#kursen-innehåll {
+  font-size: 31px;
+}
+
+.splash h1 {
   font-weight: 600;
 }
 
+.splash .container {
+  flex-grow: 1;
+  max-width: unset;
+  text-align: center;
+  font-size: 7vw;
+}
+
+.hero {
+  background: #606c38;
+  background: linear-gradient(135deg, #606c38 0%, #283618 100%);
+  color: #ffafcc;
+  font-size: 10vw;
+}
+.hero .container {
+  max-width: unset;
+  padding: 0;
+}
+
+#webbutveckling-html, #webbutveckling-css {
+  font-size: 20vw;
+}
+
+.two-columns img {
+  flex-grow: 1;
+  max-width: 40vw;
+}
+
 .animate {
-  opacity: 1;
   transition: all .5s ease-out 250ms;
 }
 
+/* image animation */
+img.animate {
+  opacity: 1;
+}
+img.hidden {
+  opacity: 0;
+}
+
+/* container animation */
 .container.animate {
+  opacity: 1;
   transform: none;
 }
-
-li span.animaten {
-  background-color: transparent;
-  color: unset;
-}
-
-.hidden {
-  transition: none; 
-}
-
 .container.hidden {
   opacity: 0;
   transform: translateX(-50px);
 }
 
+/* hero animation */
+.hero .container.animate {
+  opacity: 1;
+  transform: scale(1);
+}
+.hero .container.hidden {
+  opacity: 0;
+  transform: scale(.2);
+}
+
+/* list item animation */
+li span.animate {
+  background-color: transparent;
+  color: unset;
+  border-radius: 5px;
+}
 li span.hidden {
-  box-shadow: 0 0 3px black;
-  background-color: cornflowerblue;
-  color: cornflowerblue;
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+  background-color: #3a5a40;
+  color: #3a5a40;
 }
