@@ -9,6 +9,15 @@ body {
 h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
+li {
+  margin: 10px 0;
+}
+
+li span {
+  display: inline-block;
+  padding: 5px;
+  box-shadow: none;
+}
 
 section {
   scroll-snap-align: start;
@@ -22,17 +31,23 @@ section {
 }
 
 #intro {
-  background-image: url("images/mortar_bg.jpg");
+  background-position-y: bottom;
+  background-image: url("images/screentime_bg.jpg");
   text-shadow: 0 0 6px rgba(0, 0, 0, 0.801); 
   color: #f4f4ec;
   font-size: 5rem;
   text-align: center;
   justify-content: stretch;
 }
+#intro .container {
+  margin-bottom: 20vh;
+  text-align: right;
+  font-size: 5vw;
+}
 
 .container {
   padding: 2rem;
-  max-width: 800px;
+  max-width: 640px;
 }
 
 #intro .container {
@@ -45,18 +60,31 @@ section {
   font-weight: 600;
 }
 
-#kursen {
-  background-color: #f4f4ec;
+.animate {
+  opacity: 1;
+  transition: all .5s ease-out 250ms;
+}
+
+.container.animate {
+  transform: none;
+}
+
+li span.animaten {
+  background-color: transparent;
+  color: unset;
 }
 
 .hidden {
- transform: translateX(-50px);
- opacity: 0;
- transition: none;
+  transition: none; 
 }
 
-section.visible .animate {
-  transform: none;
-  opacity: 1;
-  transition: all .5s ease-out 250ms;
+.container.hidden {
+  opacity: 0;
+  transform: translateX(-50px);
+}
+
+li span.hidden {
+  box-shadow: 0 0 3px black;
+  background-color: cornflowerblue;
+  color: cornflowerblue;
 }
