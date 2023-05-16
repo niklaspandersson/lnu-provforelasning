@@ -28,7 +28,7 @@
 
 ## Nästa gång
 
-- DOM
+- Rivstart javascript
 - Läs på om det så ni har riktigt bra frågor med er när vi ses igen
 
 ---

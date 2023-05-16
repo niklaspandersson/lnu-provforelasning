@@ -81,6 +81,9 @@ section {
   max-width: 40vw;
 }
 
+#webbutveckling-flow img {
+  height: 75vh;
+}
 .animate {
   transition: all .5s ease-out 250ms;
 }
